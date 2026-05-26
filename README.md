@@ -156,40 +156,22 @@ Built a prediction system to classify new resumes into job categories.
 # Screenshots
 
 ## 1. Dataset Overview
-
-```markdown
 <img width="1005" height="604" alt="dataset_overview" src="https://github.com/user-attachments/assets/228608b6-6c30-4faf-b2af-e11c6cd17639" />
-```
 
 ## 2. Category-wise Resume Distribution
-
-```markdown
 <img width="1372" height="574" alt="category-wise_resume_distribution" src="https://github.com/user-attachments/assets/f82ffd0e-b97a-4e45-ba0a-8705a88b65ec" />
-```
 
 ## 3. Accuracy Comparison Chart
-
-```markdown
 <img width="870" height="578" alt="accuracy-comparison" src="https://github.com/user-attachments/assets/5b1ce284-a042-48a5-8250-a01fd2abe68f" />
-```
 
 ## 4. Confusion Matrix
-
-```markdown
 <img width="679" height="580" alt="confusion_matrix" src="https://github.com/user-attachments/assets/a4b6798c-2f40-477f-84fe-575242cf113e" />
-```
 
 ## 5. Important Features 
-
-```markdown
 <img width="1136" height="690" alt="important_features" src="https://github.com/user-attachments/assets/d411499f-0a5b-44ec-8f61-99d8e8e38df8" />
-```
 
 ## 6. Prediction Output
-
-```markdown
 <img width="1372" height="517" alt="example_1" src="https://github.com/user-attachments/assets/ad8a4c2d-4392-4a62-a3c0-f23f5a9ea6be" />
-```
 
 ---
 
