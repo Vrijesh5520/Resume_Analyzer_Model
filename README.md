@@ -1,23 +1,22 @@
 # Resume Analyzer Model using NLP & Machine Learning
 
-## Project Overview
+# Project Overview
 
-The **Resume Analyzer** is an NLP and Machine Learning based project that automatically classifies resumes into different job categories based on resume content. The project performs text preprocessing, feature extraction using TF-IDF, model training, evaluation, and prediction.
-This project helps recruiters and HR teams automate the resume screening process by identifying the most suitable domain for a candidate.
+The Resume Analyzer is an NLP and Machine Learning based project developed to automate the resume screening and classification process. The system analyzes resume text, performs preprocessing and feature extraction, and predicts the most suitable job category using Machine Learning algorithms.
+The project helps recruiters and organizations reduce manual effort in resume shortlisting by automatically identifying candidate domains based on resume content.
 
 ---
 
-# Features
+# Problem Statement
 
-* Resume text preprocessing and cleaning
-* NLP-based text normalization
-* Stopwords removal 
-* TF-IDF feature extraction
-* Multiple Machine Learning models comparison
-* Resume category prediction
-* Model evaluation with accuracy and confusion matrix
-* Feature importance visualization
-* Model saving using Pickle
+Recruiters often receive thousands of resumes for multiple job roles, making manual screening time-consuming and inefficient.
+
+The objective of this project is to build an intelligent Resume Analyzer that can:
+
+* Automatically classify resumes into job categories
+* Extract meaningful information from resume text
+* Reduce recruitment screening time
+* Improve candidate filtering efficiency
 
 ---
 
@@ -27,7 +26,7 @@ This project helps recruiters and HR teams automate the resume screening process
 
 * Python
 
-## Libraries & Frameworks
+## Libraries
 
 * Pandas
 * NumPy
@@ -36,6 +35,12 @@ This project helps recruiters and HR teams automate the resume screening process
 * Scikit-learn
 * NLTK
 * Pickle
+
+## NLP Techniques
+
+* Text Cleaning
+* Stopword Removal
+* TF-IDF Vectorization
 
 ## Machine Learning Models
 
@@ -46,77 +51,172 @@ This project helps recruiters and HR teams automate the resume screening process
 
 ---
 
-# Project Workflow
+# Dataset Information
+
+The dataset contains resumes from multiple professional domains such as:
+
+* Data Science
+* HR
+* Python Developer
+* Java Developer
+* Web Designing
+* DevOps Engineer
+* Mechanical Engineer
+* Civil Engineer
+* Business Analyst
+* Health and Fitness
+* Sales
+* Electrical Engineering
+* Network Security Engineer
+* Database
+* Automation Testing
+* SAP Developer
+* Operations Manager
+
+## Dataset Features
+
+| Column Name | Description         |
+| ----------- | ------------------- |
+| Resume      | Resume text data    |
+| Category    | Target job category |
+
+---
+
+# Workflow
 
 ## 1. Data Collection
 
-* Loaded resume dataset containing resume text and category labels.
+* Loaded resume dataset containing resume text and corresponding categories.
 
-## 2. Data Cleaning
+## 2. Data Preprocessing
 
-Performed text preprocessing such as:
+Performed NLP preprocessing techniques:
 
-* Lowercase conversion
-* Removing punctuation
-* Removing special characters
-* Removing stopwords
+* Converted text to lowercase
+* Removed punctuation and special characters
+* Removed stopwords
+* Removed unwanted symbols
+* Text normalization
 
 ## 3. Exploratory Data Analysis (EDA)
 
-* Category-wise resume distribution
-* Most frequent words analysis
+Performed analysis to understand:
+
+* Resume category distribution
+* Frequently occurring keywords
 * Resume length analysis
-* Word frequency visualization
+* Feature importance
 
 ## 4. Feature Engineering
 
-* Converted resume text into numerical vectors using **TF-IDF Vectorizer**.
+Used **TF-IDF Vectorizer** to convert textual resume data into numerical vectors.
 
-## 5. Model Training
+## 5. Model Building
 
-Trained and compared multiple machine learning models:
+Trained multiple Machine Learning models:
 
 * Logistic Regression
 * Naive Bayes
 * Linear SVC
-* Random Forest
+* Random Forest Classifier
 
 ## 6. Model Evaluation
 
-Evaluated models using:
+Evaluated model performance using:
 
 * Accuracy Score
 * Classification Report
 * Confusion Matrix
 
-## 7. Model Saving
+## 7. Prediction System
 
-Saved trained model and vectorizer using Pickle:
-
-* `best_model.pkl`
-* `tfidf.pkl`
-* `label_encoded.pkl`
+Built a prediction system to classify new resumes into job categories.
 
 ---
 
-# Installation
+# Results
 
-## Clone Repository
+* Successfully classified resumes into multiple job categories.
+* Achieved high classification accuracy using TF-IDF and Machine Learning models.
+* Linear SVC and Random Forest provided strong performance for resume classification.
+* The system effectively identified domain-specific resume patterns.
+
+---
+
+# Key Business Insights
+
+* Automated resume screening can significantly reduce recruiter workload.
+* NLP techniques improve resume understanding and candidate categorization.
+* Skill-based resume classification helps recruiters shortlist candidates faster.
+* Machine Learning models can identify domain-specific keywords efficiently.
+* Resume classification systems can improve hiring productivity and reduce manual errors.
+
+---
+
+# Screenshots
+
+## 1. Dataset Overview
+
+```markdown
+<img width="1005" height="604" alt="dataset_overview" src="https://github.com/user-attachments/assets/228608b6-6c30-4faf-b2af-e11c6cd17639" />
+```
+
+## 2. Category-wise Resume Distribution
+
+```markdown
+<img width="1372" height="574" alt="category-wise_resume_distribution" src="https://github.com/user-attachments/assets/f82ffd0e-b97a-4e45-ba0a-8705a88b65ec" />
+```
+
+## 3. Accuracy Comparison Chart
+
+```markdown
+<img width="870" height="578" alt="accuracy-comparison" src="https://github.com/user-attachments/assets/5b1ce284-a042-48a5-8250-a01fd2abe68f" />
+```
+
+## 4. Confusion Matrix
+
+```markdown
+<img width="679" height="580" alt="confusion_matrix" src="https://github.com/user-attachments/assets/a4b6798c-2f40-477f-84fe-575242cf113e" />
+```
+
+## 5. Important Features 
+
+```markdown
+<img width="1136" height="690" alt="important_features" src="https://github.com/user-attachments/assets/d411499f-0a5b-44ec-8f61-99d8e8e38df8" />
+```
+
+## 6. Prediction Output
+
+```markdown
+<img width="1372" height="517" alt="example_1" src="https://github.com/user-attachments/assets/ad8a4c2d-4392-4a62-a3c0-f23f5a9ea6be" />
+```
+
+---
+
+# How to Run
+
+## Step 1: Clone Repository
 
 ```bash
 git clone https://github.com/Vrijesh5520/Resume_Analyzer_Model.git
 cd Resume_Analyzer_Model
 ```
 
-# How to Run
+## Step 2: Install Required Libraries
 
-## Run Jupyter Notebook
+```bash
+pip install -r requirements.txt
+```
+
+## Step 3: Open Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+## Step 4: Run Notebook
+
+Open and run:
 
 ```bash
 Resume_Analyzer_Model.ipynb
@@ -124,86 +224,40 @@ Resume_Analyzer_Model.ipynb
 
 ---
 
-# Sample Use Cases
+# Example
 
-* Automated resume screening
-* HR recruitment automation
-* Resume domain classification
-* Candidate profile filtering
-* NLP text classification learning project
+## Input Resume
 
----
+```text
+sample_resume1 = """
+John Doe
+Python Developer and Data Analyst
+Skills: Python, SQL, Machine Learning, Deep Learning, NLP, Power BI, Tableau, Pandas, NumPy, Scikit-learn, Data Visualization
+Projects: Built machine learning models for customer churn prediction and sentiment analysis.
+Experience: Worked on predictive analytics and dashboard development.
+"""
+analyze_resume(sample_resume1)```
 
-# Model Performance
+## Predicted Output
 
-The project compares multiple ML algorithms and selects the best-performing model based on accuracy.
-
-Evaluation metrics used:
-
-* Accuracy Score
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+```text
+Predicted Role: Data Science
+ATS Match Score: 56.94 %
+Resume Skills:
+['data visualization', 'pandas', 'c', 'sql', 'nlp', 'machine learning', 'deep learning', 'numpy', 'power bi', 'scikit-learn', 'tableau', 'python']
+Missing Skills:
+['statistics', 'data analysis']
+```
 
 ---
 
 # Future Improvements
 
-* Deploy project using Streamlit or Flask
-* Add PDF/DOCX resume upload feature
+* Deploy application using Streamlit
+* Add PDF/DOCX resume upload support
 * Improve skill extraction system
 * Integrate job recommendation engine
-* Add deep learning models
-
----
-
-Example folder structure:
-
-```bash
-Resume-Analyzer-Model/
-│
-├── screenshots/
-│   ├── category_distribution.png
-│   ├── confusion_matrix.png
-│   ├── model_accuracy.png
-│   └── prediction_output.png
-```
-
-## Add Screenshots in README
-
-### Resume Category Distribution
-
-```markdown
-![Category Distribution](screenshots/category_distribution.png)
-```
-
-### Confusion Matrix
-
-```markdown
-![Confusion Matrix](screenshots/confusion_matrix.png)
-```
-
-### Prediction Output
-
-```markdown
-![Prediction Output](screenshots/prediction_output.png)
-```
-
----
-
-# Example Prediction
-
-## Input Resume Text
-
-```text
-Experienced Python Developer skilled in Machine Learning, Data Analysis, Pandas, NumPy, Scikit-learn, and SQL.
-```
-
-## Predicted Category
-
-```text
-Python Developer
-```
+* Use Deep Learning and Transformer models
+* Build recruiter dashboard for analytics
 
 ---
