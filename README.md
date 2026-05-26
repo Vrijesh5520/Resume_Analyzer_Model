@@ -1,6 +1,6 @@
-# Resume Analyzer using NLP & Machine Learning
+# Resume Analyzer Model using NLP & Machine Learning
 
-## Overview
+## Project Overview
 
 The **Resume Analyzer** is an NLP and Machine Learning based project that automatically classifies resumes into different job categories based on resume content. The project performs text preprocessing, feature extraction using TF-IDF, model training, evaluation, and prediction.
 This project helps recruiters and HR teams automate the resume screening process by identifying the most suitable domain for a candidate.
