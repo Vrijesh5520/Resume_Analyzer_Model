@@ -104,8 +104,8 @@ Saved trained model and vectorizer using Pickle:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Resume-Analyzer.git
-cd Resume-Analyzer
+git clone https://github.com/Vrijesh5520/Resume_Analyzer_Model.git
+cd Resume_Analyzer_Model
 ```
 
 # How to Run
