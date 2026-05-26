@@ -11,7 +11,7 @@ This project helps recruiters and HR teams automate the resume screening process
 
 * Resume text preprocessing and cleaning
 * NLP-based text normalization
-* Stopwords removal and lemmatization
+* Stopwords removal 
 * TF-IDF feature extraction
 * Multiple Machine Learning models comparison
 * Resume category prediction
