@@ -243,3 +243,6 @@ Missing Skills:
 * Build recruiter dashboard for analytics
 
 ---
+
+## Author
+Vrijesh S. Balam
